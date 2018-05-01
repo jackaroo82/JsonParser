@@ -15,7 +15,11 @@ public interface IJSONFactory {
 
 	void setDefaultFieldCreator(IFieldCreator defaultFieldCreator);
 
+	IFieldCreator getDefaultFieldCreator();
+
 	void setObjectCreator(IObjectCreator objectCreator);
+
+	IObjectCreator getObjectCreator();
 
 	void setFieldCreators(Map<Class<?>, IFieldCreator> fieldCreators);
 
@@ -23,6 +27,10 @@ public interface IJSONFactory {
 
 	void setDefaultValueCreator(IValueCreator defaultValueCreator);
 
+	IValueCreator getDefaultValueCreator();
+
 	void setObjectTagger(IObjectTagger objectTagger);
+
+	IObjectTagger getObjectTagger();
 	
 }
